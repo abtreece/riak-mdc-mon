@@ -10,6 +10,14 @@
   <name>Riak Multiple Data Center Replication Monitor</name>
   <url>http://maven.apache.org</url>
   <build>
+    <extensions>
+      <extension>
+        <groupId>io.packagecloud.maven.wagon</groupId>
+        <artifactId>maven-packagecloud-wagon</artifactId>
+        <version>0.0.4</version>
+      </extension>
+    </extensions>
+
   	<plugins>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
@@ -45,13 +53,6 @@
   			</configuration>
   		</plugin>
   	</plugins>
-    <Extensions>
-      <Extension>
-        <GroupId>io.packagecloud.maven.wagon</GroupId>
-        <ArtifactId>maven-packagecloud-wagon</ArtifactId>
-        <Version>0.0.4</Version>
-      </Extension>
-    </Extensions>
   </build>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

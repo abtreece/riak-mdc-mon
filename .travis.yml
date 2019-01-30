@@ -7,10 +7,10 @@ cache:
   - "$HOME/.cache"
 
 deploy:
-  provider: packagecloud
-  repository: riak-mdc-mon
-  username: $PACKAGECLOUD_USER
-  token: $PACKAGECLOUD_TOKEN
+  provider: releases
+  api-key: $GITHUB_OATH_TOKEN
+  file: *.tar.gz
   skip_cleanup: true
+  file_glob: true
   on:
-    branch: master
+    tags: true

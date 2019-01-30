@@ -6,11 +6,14 @@ cache:
   directories:
   - "$HOME/.cache"
 
+before_deploy: 
+  - export RELEASE_PKG_FILE=$(ls *.tar.gz)
+  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
 deploy:
   provider: releases
   api-key: $GITHUB_OATH_TOKEN
-  file: *.tar.gz
-  skip_cleanup: true
   file_glob: true
+  file: "${RELEASE_PKG_FILE}" 
+  skip_cleanup: true
   on:
     tags: true

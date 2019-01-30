@@ -9,8 +9,8 @@ cache:
 deploy:
   provider: packagecloud
   repository: riak-mdc-mon
-  username: ${env.PACKAGECLOUD_USER}
-  token: ${env.PACKAGECLOUD_TOKEN}
+  username: $PACKAGECLOUD_USER
+  token: $PACKAGECLOUD_TOKEN
   skip_cleanup: true
   on:
     branch: master

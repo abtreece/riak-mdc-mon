@@ -102,18 +102,18 @@
     </dependency>
   </dependencies>
 
-  <DistributionManagement>
-  <Repository>
-    <Id>packagecloud-abtreece</Id>
-    <Url>
+  <distributionManagement>
+  <repository>
+    <id>packagecloud-abtreece</id>
+    <url>
       packagecloud+https://packagecloud.io/abtreece/riak-mdc-mon
-    </Url>
-  </Repository>
-  <SnapshotRepository>
-    <Id>packagecloud-abtreece</Id>
-    <Url>
+    </url>
+  </repository>
+  <snapshotRepository>
+    <id>packagecloud-abtreece</id>
+    <url>
       packagecloud+https://packagecloud.io/abtreece/riak-mdc-mon
-    </Url>
-  </SnapshotRepository>
-  </DistributionManagement>
+    </url>
+  </snapshotRepository>
+  </distributionManagement>
 </project>

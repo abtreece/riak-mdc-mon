@@ -4,7 +4,7 @@
 
   <groupId>com.basho.proserv</groupId>
   <artifactId>riak-mdc-mon</artifactId>
-  <version>1.0.0</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <name>Riak Multiple Data Center Replication Monitor</name>

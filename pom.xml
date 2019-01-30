@@ -14,7 +14,7 @@
       <extension>
         <groupId>io.packagecloud.maven.wagon</groupId>
         <artifactId>maven-packagecloud-wagon</artifactId>
-        <version>0.0.4</version>
+        <version>0.0.6</version>
       </extension>
     </extensions>
 
@@ -104,13 +104,13 @@
 
   <distributionManagement>
   <repository>
-    <id>packagecloud-travis</id>
+    <id>packagecloud-abtreece</id>
     <url>
       packagecloud+https://packagecloud.io/abtreece/riak-mdc-mon
     </url>
   </repository>
   <snapshotRepository>
-    <id>packagecloud-travis</id>
+    <id>packagecloud-abtreece</id>
     <url>
       packagecloud+https://packagecloud.io/abtreece/riak-mdc-mon
     </url>

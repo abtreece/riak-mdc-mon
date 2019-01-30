@@ -45,6 +45,13 @@
   			</configuration>
   		</plugin>
   	</plugins>
+    <Extensions>
+      <Extension>
+        <GroupId>io.packagecloud.maven.wagon</GroupId>
+        <ArtifactId>maven-packagecloud-wagon</ArtifactId>
+        <Version>0.0.4</Version>
+      </Extension>
+    </Extensions>
   </build>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,4 +100,19 @@
     	<version>1.7.2</version>
     </dependency>
   </dependencies>
+
+  <DistributionManagement>
+  <Repository>
+    <Id>packagecloud-abtreece</Id>
+    <Url>
+      packagecloud+https://packagecloud.io/abtreece/riak-mdc-mon
+    </Url>
+  </Repository>
+  <SnapshotRepository>
+    <Id>packagecloud-abtreece</Id>
+    <Url>
+      packagecloud+https://packagecloud.io/abtreece/riak-mdc-mon
+    </Url>
+  </SnapshotRepository>
+  </DistributionManagement>
 </project>

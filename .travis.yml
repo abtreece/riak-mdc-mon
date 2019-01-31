@@ -8,7 +8,7 @@ cache:
 
 before_deploy: 
   - export RELEASE_PKG_FILE=$(find . -name *.tar.gz)
-  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
+  - echo "deploying ${RELEASE_PKG_FILE} to GitHub releases"
 deploy:
   provider: releases
   api-key: $GITHUB_OATH_TOKEN

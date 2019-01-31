@@ -36,7 +36,7 @@ public class RiakSyncData extends SyncData {
 				Long time = Long.parseLong(objects[0].getValueAsString());
 				super.setDataCenterLatency(remote, time);
 			} else {
-				super.setDataCenterLatency(remote, 0l);
+				super.setDataCenterLatency(remote, 0);
 			}
 		}
 	}
